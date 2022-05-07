@@ -3,7 +3,7 @@ import React from 'react';
 const Item = () => {
     return (
         <div>
-            <div className='md:py-3 grid grid-cols-1 md:grid-cols-5 shadow-lg shadow-gray-200 hover:shadow-gray-300'>
+            <div className='md:py-3 grid grid-cols-1 md:grid-cols-5 shadow-lg shadow-gray-200 hover:shadow-gray-400'>
                 <div className='py-3 md:py-0 flex justify-center items-center mx-3'>
                     <img src="https://i.ibb.co/fSyDzH4/gs-x6010mc.jpg" alt="" className='w-1/3 lg:w-1/3' />
                 </div>

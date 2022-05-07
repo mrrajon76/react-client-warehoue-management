@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import InventoryItems from '../Inventory/InventoryItems/InventoryItems';
 import MostSellingItems from '../Inventory/MostSellingItems/MostSellingItems';
+import NeedReStock from '../Inventory/NeedReStock/NeedReStock';
 import Footer from '../Shared/Footer/Footer';
 import Header from '../Shared/Header/Header';
 import './Home.css'
@@ -32,7 +33,7 @@ const Home = () => {
                 {/* Inventory items section */}
                 <div>
                     <div className='mb-7'>
-                        <h2 className='text-3xl md:text-5xl font-bold text-purple-700 text-center'>Inventory Items</h2>
+                        <h2 className='text-3xl md:text-5xl font-bold text-purple-700 text-center'><span className='text-lime-500'>Inventory</span> Items</h2>
                     </div>
 
                     {/* items */}
@@ -49,11 +50,21 @@ const Home = () => {
                 {/* Most selling items section */}
                 <div className='my-16'>
                     <div className='mb-7'>
-                        <h2 className='text-3xl md:text-5xl font-bold text-purple-700 text-center'>Most Selling Items</h2>
+                        <h2 className='text-3xl md:text-5xl font-bold text-purple-700 text-center'><span className='text-lime-500'>Most</span> Selling Items</h2>
                     </div>
 
                     {/* items */}
                     <MostSellingItems></MostSellingItems>
+                </div>
+
+                {/* Need reStock section */}
+                <div className='mb-16'>
+                    <div className='mb-7'>
+                        <h2 className='text-3xl md:text-5xl font-bold text-purple-700 text-center'>Need a <span className='text-lime-500'>Re-stock</span> Soon!</h2>
+                    </div>
+
+                    {/* items */}
+                    <NeedReStock></NeedReStock>
                 </div>
             </div>
 

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Item = () => {
     return (
         <div>
-            <div className='mt-5 md:py-3 grid grid-cols-1 md:grid-cols-5 border-2 border-gray-200 hover:bg-gray-100'>
+            <div className='mt-5 md:py-3 grid grid-cols-1 md:grid-cols-5 border-2 border-gray-200 hover:bg-gray-200'>
                 <div className='py-3 md:py-0 flex justify-center items-center mx-3'>
                     <img src="https://i.ibb.co/fSyDzH4/gs-x6010mc.jpg" alt="" className='w-1/3 md:w-1/2 lg:w-1/3' />
                 </div>
