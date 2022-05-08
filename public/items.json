@@ -7,6 +7,7 @@
       "price": 289611,
       "quantity": 44,
       "supplier": "Whirlpool USA",
+      "addedBy": "mrrajon76@gmail.com",
       "sold": 20
     },
     {
@@ -17,6 +18,7 @@
       "price": 118971,
       "quantity": 189,
       "supplier": "Sony-Rangs Bangladesh",
+      "addedBy": "abc@abc.com",
       "sold": 40
     },
     {
@@ -27,6 +29,7 @@
       "price": 175351,
       "quantity": 202,
       "supplier": "Samsung Bangladesh",
+      "addedBy": "mrrajon76@gmail.com",
       "sold": 55
     },
     {
@@ -37,6 +40,7 @@
       "price": 95202,
       "quantity": 48,
       "supplier": "OnePlus BD",
+      "addedBy": "mrrajon76@gmail.com",
       "sold": 18
     },
     {
@@ -47,6 +51,7 @@
       "price": 272888,
       "quantity": 31,
       "supplier": "Samsung Bangladesh",
+      "addedBy": "def@def.com",
       "sold": 43
     },
     {
@@ -57,6 +62,7 @@
       "price": 43912,
       "quantity": 186,
       "supplier": "Samsung USA",
+      "addedBy": "abc@abc.com",
       "sold": 62
     },
     {
@@ -67,6 +73,7 @@
       "price": 152260,
       "quantity": 186,
       "supplier": "Apple USA",
+      "addedBy": "mrrajon76@gmail.com",
       "sold": 41
     },
     {
@@ -77,6 +84,7 @@
       "price": 198918,
       "quantity": 152,
       "supplier": "Samsung USA",
+      "addedBy": "def@def.com",
       "sold": 33
     },
     {
@@ -87,6 +95,7 @@
       "price": 100602,
       "quantity": 156,
       "supplier": "Sony Bangladesh",
+      "addedBy": "mrrajon76@gmail.com",
       "sold": 58
     },
     {
@@ -97,6 +106,7 @@
       "price": 118805,
       "quantity": 208,
       "supplier": "LG USA",
+      "addedBy": "abc@abc.com",
       "sold": 66
     },
     {
@@ -107,6 +117,7 @@
       "price": 130202,
       "quantity": 48,
       "supplier": "Apple USA",
+      "addedBy": "mrrajon76@gmail.com",
       "sold": 37
     }
   ]

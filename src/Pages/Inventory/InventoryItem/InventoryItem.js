@@ -1,8 +1,22 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { GoSettings } from 'react-icons/go';
+import { RiDeleteBin6Fill } from 'react-icons/ri';
+import { useNavigate } from 'react-router-dom';
 
-const InventoryItem = (props) => {
-    const { image, name, desc, price, quantity, supplier } = props.data;
+const InventoryItem = ({ data }) => {
+
+    const navigate = useNavigate();
+    const { _id, image, name, desc, price, quantity, supplier } = data;
+
+    const navigateToManageStock = id => {
+        console.log(id);
+        navigate(`/inventory/${id}`);
+    }
+
+    const handleDelete = (id) => {
+        window.alert('Hello!');
+    }
+
     return (
         <div>
             <div className='mt-5 md:py-3 grid grid-cols-1 md:grid-cols-5 border-2 border-gray-200 hover:bg-gray-200'>
@@ -19,9 +33,8 @@ const InventoryItem = (props) => {
                     </div>
                 </div>
                 <div className='py-3 md:py-0 flex justify-center items-center mx-3'>
-                    <Link to='/manage-inventories'>
-                        <button className='bg-purple-700 hover:bg-lime-500 text-white py-2 px-3 lg:px-5 rounded'>Manage Stock</button>
-                    </Link>
+                    <GoSettings onClick={() => navigateToManageStock(_id)} className='cursor-pointer text-purple-700 hover:text-lime-600 text-2xl' title='Manage Stock' />
+                    <RiDeleteBin6Fill onClick={() => handleDelete(_id)} className='cursor-pointer text-red-600 hover:text-lime-600 text-2xl ml-5' title='Delete Item' />
                 </div>
             </div>
         </div>
