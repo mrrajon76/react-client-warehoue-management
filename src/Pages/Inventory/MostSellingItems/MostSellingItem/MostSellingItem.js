@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Item = () => {
+const MostSellingItem = () => {
     return (
         <div>
             <div className='md:py-3 grid grid-cols-1 md:grid-cols-5 shadow-lg shadow-gray-200 hover:shadow-gray-400'>
@@ -18,4 +18,4 @@ const Item = () => {
     );
 };
 
-export default Item;
+export default MostSellingItem;

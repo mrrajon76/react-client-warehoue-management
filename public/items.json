@@ -1,0 +1,112 @@
+[
+    {
+      "id": "62777029b71ff7e52a3919a1",
+      "image": "https://i.ibb.co/0y1jKY2/refri-1.jpg",
+      "name": "Whirlpool WRS571CIHV",
+      "desc": "Store more of your family's favorites in this counter depth refrigerator, features an exterior ice and water dispenser with EveryDrop™ filtration.",
+      "price": 289611,
+      "quantity": 44,
+      "supplier": "Whirlpool USA",
+      "sold": 20
+    },
+    {
+      "id": "62777029d296ed630ddec23f",
+      "image": "https://i.ibb.co/QJC6cWn/tv1.jpg",
+      "name": "Sony BRAVIA XR | Z9J",
+      "desc": "Supreme 8K realism, driven by human intelligence. See how close you can get to the real world on this big screen 8K TV, powered by our revolutionary Cognitive Processor XR™.",
+      "price": 118971,
+      "quantity": 189,
+      "supplier": "Sony-Rangs Bangladesh",
+      "sold": 40
+    },
+    {
+      "id": "62777029f64cc6569de1e6d2",
+      "image": "https://i.ibb.co/KKdZvSB/mobile-2.png",
+      "name": "Galaxy S22 Ultra",
+      "desc": "Feast your eyes on Galaxy S22 Ultra. Slim silhouette. Gorgeous colors. Mirrored lens rings. A polished, elegant frame. Oh. So. Beautiful.",
+      "price": 175351,
+      "quantity": 202,
+      "supplier": "Samsung Bangladesh",
+      "sold": 55
+    },
+    {
+      "id": "627770292cc06a2861a8r121",
+      "image": "https://i.ibb.co/Ss2k5y6/mobile-4.jpg",
+      "name": "OnePlus 9 Pro",
+      "desc": "Hasselblad Camera for Mobile - 120 Hz Fluid Display 2.0 - Premium Design - Qualcomm® Snapdragon™ 888 with 5G",
+      "price": 95202,
+      "quantity": 48,
+      "supplier": "OnePlus BD",
+      "sold": 18
+    },
+    {
+      "id": "6277702904de4d0c090c7b38",
+      "image": "https://i.ibb.co/q9R4Gwh/tv2.png",
+      "name": "Samsung Neo QLED",
+      "desc": "The latest TV, installed for free.Get free in-home installation with the new Samsung Neo QLED 8K TV.",
+      "price": 272888,
+      "quantity": 31,
+      "supplier": "Samsung Bangladesh",
+      "sold": 43
+    },
+    {
+      "id": "627770293d5edd874a300e2f",
+      "image": "https://i.ibb.co/bHpPM2R/micro-1.png",
+      "name": "Microwave with Auto Cook",
+      "desc": "This 1.6 cu. ft. capacity Over-the-Range Microwave with Auto Cook takes the guesswork out of cook time with pre-programmed settings.",
+      "price": 43912,
+      "quantity": 186,
+      "supplier": "Samsung USA",
+      "sold": 62
+    },
+    {
+      "id": "6277702909be914f14cb6d02",
+      "image": "https://i.ibb.co/j3Nhj3W/laptop-1.jpg",
+      "name": "MacBook Pro 16-inch",
+      "desc": "The most powerful MacBook Pro ever is here. With the blazing-fast M1 Pro or M1 Max chip, the first Apple silicon designed for pros",
+      "price": 152260,
+      "quantity": 186,
+      "supplier": "Apple USA",
+      "sold": 41
+    },
+    {
+      "id": "62777029f7e060e85c6a5e53",
+      "image": "https://i.ibb.co/HY6Sr5Y/refri-2.png",
+      "name": "Bespoke 3-Door French Door",
+      "desc": "Counter Depth 3-Door French Door Refrigerator with customizable and changeable door panels available in a variety of colors and finishes featuring Family Hub™.",
+      "price": 198918,
+      "quantity": 152,
+      "supplier": "Samsung USA",
+      "sold": 33
+    },
+    {
+      "id": "627770291452b98ad6dd5a1b",
+      "image": "https://i.ibb.co/bHpqKKS/mobile-1.jpg",
+      "name": "Xperia PRO-I",
+      "desc": "The 'I' stands for Imaging. The Xperia PRO-I redefines the camera, combining professional imaging quality with smartphone communication capabilities.",
+      "price": 100602,
+      "quantity": 156,
+      "supplier": "Sony Bangladesh",
+      "sold": 58
+    },
+    {
+      "id": "62777029552b30b646ae4cb6",
+      "image": "https://i.ibb.co/JnC1sgY/wash-1.png",
+      "name": "LG TWINWash",
+      "desc": "Upgrade your laundry room when you bundle an LG front-loading washer, LG SideKick™, LG dryer and LG dryer pedestal storage.",
+      "price": 118805,
+      "quantity": 208,
+      "supplier": "LG USA",
+      "sold": 66
+    },
+    {
+      "id": "627770292cc06a2861a8f212",
+      "image": "https://i.ibb.co/5nYz218/mobile-3.png",
+      "name": "iPhone 13 Pro",
+      "desc": "A dramatically more powerful camera system. A display so responsive, every interaction feels new again. The world’s fastest smartphone chip.",
+      "price": 130202,
+      "quantity": 48,
+      "supplier": "Apple USA",
+      "sold": 37
+    }
+  ]

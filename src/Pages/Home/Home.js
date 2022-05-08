@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import InventoryItems from '../Inventory/InventoryItems/InventoryItems';
+import InventoryItems from '../Inventory/InventoryItems/InventoryItems/InventoryItems';
 import MostSellingItems from '../Inventory/MostSellingItems/MostSellingItems';
 import NeedReStock from '../Inventory/NeedReStock/NeedReStock';
 import Footer from '../Shared/Footer/Footer';
@@ -37,7 +37,7 @@ const Home = () => {
                     </div>
 
                     {/* items */}
-                    <InventoryItems></InventoryItems>
+                    <InventoryItems>6</InventoryItems>
 
                     {/* Manage inventory button */}
                     <div className='flex justify-center mt-8'>
@@ -55,6 +55,7 @@ const Home = () => {
 
                     {/* items */}
                     <MostSellingItems></MostSellingItems>
+
                 </div>
 
                 {/* Need reStock section */}
