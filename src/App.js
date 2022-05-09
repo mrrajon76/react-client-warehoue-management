@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import 'react-toastify/dist/ReactToastify.css';
 import About from './Pages/About/About';
 import Blogs from './Pages/Blogs/Blogs';
 import Home from './Pages/Home/Home';
@@ -8,6 +9,7 @@ import ManageStock from './Pages/Inventory/ManageStock/ManageStock';
 import NotFound from './Pages/NotFound/NotFound';
 import Login from './Pages/User/Login/Login';
 import Register from './Pages/User/Register/Register';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
+
+      <ToastContainer></ToastContainer>
     </div >
   );
 }

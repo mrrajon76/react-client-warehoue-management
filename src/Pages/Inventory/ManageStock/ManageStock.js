@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom';
 import useSingleItem from '../../../hooks/useSingleItem';
 import Footer from '../../Shared/Footer/Footer';
@@ -7,7 +7,6 @@ import Header from '../../Shared/Header/Header';
 const ManageStock = () => {
     const { id } = useParams();
     const [details] = useSingleItem(id);
-    const [open, setOpen] = useState(false);
 
     const handleDelivery = id => {
     }

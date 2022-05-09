@@ -9,7 +9,6 @@ const InventoryItem = ({ data }) => {
     const { _id, image, name, desc, price, quantity, supplier } = data;
 
     const navigateToManageStock = id => {
-        console.log(id);
         navigate(`/inventory/${id}`);
     }
 
