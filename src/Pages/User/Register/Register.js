@@ -48,7 +48,7 @@ const Register = () => {
         <div>
             <Header></Header>
 
-            <div className='lg:min-h-[67vh] lg:w-1/3 mx-5 md:mx-20 lg:mx-auto my-14 py-14 px-5 md:px-10 lg:py-7 lg:px-7 shadow-lg shadow-slate-400'>
+            <div className='lg:min-h-[70vh] lg:w-1/3 mx-5 md:mx-20 lg:mx-auto my-14 py-14 px-5 md:px-10 lg:py-7 lg:px-7 shadow-lg shadow-slate-400'>
                 <h3 className='text-4xl text-lime-500 font-extrabold text-center mb-6'>Register</h3>
                 {
                     errorMessage
