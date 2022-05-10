@@ -25,7 +25,7 @@ const AddNewItem = () => {
         if (name && price && quantity && supplier && image && desc) {
             const data = { image, name, desc, price, quantity, supplier, addedBy, sold }
 
-            fetch('https://blooming-harbor-14420.herokuapp.com//inventory', {
+            fetch('https://blooming-harbor-14420.herokuapp.com/inventory', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

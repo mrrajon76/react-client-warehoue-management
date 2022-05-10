@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import useItems from '../../../hooks/useItems';
 import useSingleItem from '../../../hooks/useSingleItem';
 import Footer from '../../Shared/Footer/Footer';
 import Header from '../../Shared/Header/Header';
@@ -8,6 +9,7 @@ import Header from '../../Shared/Header/Header';
 const ManageStock = () => {
     const { id } = useParams();
     const [details] = useSingleItem(id);
+    const [items, setItems] = useItems();
     const [quantity, setQuantity] = useState(0);
     const [sold, setSold] = useState(0);
 
@@ -44,7 +46,17 @@ const ManageStock = () => {
     // Delete item
     const handleDelete = id => {
         if (window.confirm("Do you really want to delete this item?") === true) {
-            console.log('YES');
+            const url = `http://localhost:5000/inventory/${id}`;
+            fetch(url, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    const remaining = items.filter(item => item._id !== id);
+                    setItems(remaining);
+                })
+            window.history.back();
         }
     }
 

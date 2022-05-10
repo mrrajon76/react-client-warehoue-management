@@ -3,17 +3,13 @@ import { GoSettings } from 'react-icons/go';
 import { RiDeleteBin6Fill } from 'react-icons/ri';
 import { useNavigate } from 'react-router-dom';
 
-const InventoryItem = ({ data }) => {
+const InventoryItem = ({ data, dlt }) => {
 
     const navigate = useNavigate();
     const { _id, image, name, desc, price, quantity, supplier } = data;
 
     const navigateToManageStock = id => {
         navigate(`/inventory/${id}`);
-    }
-
-    const handleDelete = (id) => {
-        window.alert('Hello!');
     }
 
     return (
@@ -33,7 +29,7 @@ const InventoryItem = ({ data }) => {
                 </div>
                 <div className='py-3 md:py-0 flex justify-center items-center mx-3'>
                     <GoSettings onClick={() => navigateToManageStock(_id)} className='cursor-pointer text-purple-700 hover:text-lime-600 text-2xl' title='Manage Stock' />
-                    <RiDeleteBin6Fill onClick={() => handleDelete(_id)} className='cursor-pointer text-red-600 hover:text-lime-600 text-2xl ml-5' title='Delete Item' />
+                    <RiDeleteBin6Fill onClick={() => dlt(_id)} className='cursor-pointer text-red-600 hover:text-lime-600 text-2xl ml-5' title='Delete Item' />
                 </div>
             </div>
         </div>
