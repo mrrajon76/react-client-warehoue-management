@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const useSingleItem = (itemId) => {
+const useSingleItem = (itemId, quantity) => {
 
     const [details, setDetails] = useState([]);
 
@@ -9,9 +9,9 @@ const useSingleItem = (itemId) => {
         fetch(url)
             .then(res => res.json())
             .then(data => setDetails(data))
-    }, [itemId]);
+    }, [itemId, quantity]);
 
-    return [details, setDetails];
+    return [details];
 }
 
 export default useSingleItem;

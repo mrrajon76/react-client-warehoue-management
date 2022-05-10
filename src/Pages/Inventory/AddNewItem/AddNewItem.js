@@ -23,7 +23,18 @@ const AddNewItem = () => {
         const sold = 0;
 
         if (name && price && quantity && supplier && image && description) {
-            console.log(addedBy, name, price, quantity, supplier, sold, image, description);
+            const data = { image, name, description, price, quantity, supplier, addedBy, sold }
+
+            fetch('http://localhost:5000/inventory/', {
+                method: 'POST',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+                .then(res => res.json())
+                .then(result => console.log(result))
+
             toast('Thank you! Item is added successfully.')
             event.target.reset();
         }
