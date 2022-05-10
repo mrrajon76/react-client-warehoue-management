@@ -17,15 +17,15 @@ const AddNewItem = () => {
         const quantity = event.target.quantity.value;
         const supplier = event.target.supplier.value;
         const image = event.target.image.value;
-        const description = event.target.description.value;
+        const desc = event.target.description.value;
 
         const addedBy = user.email;
         const sold = 0;
 
-        if (name && price && quantity && supplier && image && description) {
-            const data = { image, name, description, price, quantity, supplier, addedBy, sold }
+        if (name && price && quantity && supplier && image && desc) {
+            const data = { image, name, desc, price, quantity, supplier, addedBy, sold }
 
-            fetch('http://localhost:5000/inventory/', {
+            fetch('https://blooming-harbor-14420.herokuapp.com//inventory', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'
@@ -33,7 +33,9 @@ const AddNewItem = () => {
                 body: JSON.stringify(data)
             })
                 .then(res => res.json())
-                .then(result => console.log(result))
+                .then(result => {
+                    console.log(result);
+                })
 
             toast('Thank you! Item is added successfully.')
             event.target.reset();
