@@ -10,9 +10,9 @@ const InventoryItems = (props) => {
         <div>
             {
                 props.children ?
-                    items.slice(0, 6).map(item => <InventoryItem data={item} key={item._id}></InventoryItem>)
+                    items?.slice(0, 6).map(item => <InventoryItem data={item} key={item._id}></InventoryItem>)
                     :
-                    items.map(item => <InventoryItem data={item} key={item._id}></InventoryItem>)
+                    items?.map(item => <InventoryItem data={item} key={item._id}></InventoryItem>)
             }
         </div>
     );

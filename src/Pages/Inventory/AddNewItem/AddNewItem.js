@@ -20,9 +20,10 @@ const AddNewItem = () => {
         const description = event.target.description.value;
 
         const addedBy = user.email;
+        const sold = 0;
 
         if (name && price && quantity && supplier && image && description) {
-            console.log(addedBy, name, price, quantity, supplier, image, description);
+            console.log(addedBy, name, price, quantity, supplier, sold, image, description);
             toast('Thank you! Item is added successfully.')
             event.target.reset();
         }
