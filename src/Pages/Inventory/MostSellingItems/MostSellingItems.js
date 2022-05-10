@@ -1,15 +1,18 @@
 import React from 'react';
-import Item from './MostSellingItem/MostSellingItem';
+import useItems from '../../../hooks/useItems';
+import MostSellingItem from './MostSellingItem/MostSellingItem';
 
 const MostSellingItems = () => {
+    const [items] = useItems();
+
+    const mostSellingItems = items.sort((a, b) => b.sold - a.sold);
+    console.log(mostSellingItems);
+
     return (
         <div className='grid lg:grid-cols-2 gap-5 lg:gap-8'>
-            <Item></Item>
-            <Item></Item>
-            <Item></Item>
-            <Item></Item>
-            <Item></Item>
-            <Item></Item>
+            {
+                mostSellingItems?.slice(0, 6).map(item => <MostSellingItem data={item} key={item._id}></MostSellingItem>)
+            }
         </div>
     );
 };

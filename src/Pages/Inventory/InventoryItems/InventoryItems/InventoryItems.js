@@ -9,7 +9,7 @@ const InventoryItems = (props) => {
     // Delete item
     const handleDelete = (id) => {
         if (window.confirm("Are you really want to delete this item?") === true) {
-            const url = `http://localhost:5000/inventory/${id}`;
+            const url = `https://blooming-harbor-14420.herokuapp.com/inventory/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

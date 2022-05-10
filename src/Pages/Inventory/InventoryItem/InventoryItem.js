@@ -18,7 +18,7 @@ const InventoryItem = ({ data, dlt }) => {
                 <div className='py-3 md:py-0 flex justify-center items-center mx-3'>
                     <img src={image} alt="" className='w-1/3 md:w-1/2 lg:w-1/3' />
                 </div>
-                <div className='py-3 md:py-0 md:col-span-3 border-y-2 md:border-y-0 border-x-0 md:border-x-2 border-gray-200 px-5'>
+                <div className='py-3 md:py-0 md:col-span-3 border-y-2 md:border-y-0 border-x-0 md:border-x-2 border-gray-200 hover:border-gray-300 px-5'>
                     <h5 className='text-lg lg:text-xl font-bold text-lime-500'>{name}</h5>
                     <p className='my-3 text-sm'>{desc}</p>
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
