@@ -6,7 +6,6 @@ const MostSellingItems = () => {
     const [items] = useItems();
 
     const mostSellingItems = items.sort((a, b) => b.sold - a.sold);
-    console.log(mostSellingItems);
 
     return (
         <div className='grid lg:grid-cols-2 gap-5 lg:gap-8'>

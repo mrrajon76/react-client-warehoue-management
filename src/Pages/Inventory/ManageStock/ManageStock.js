@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import useItems from '../../../hooks/useItems';
 import useSingleItem from '../../../hooks/useSingleItem';
@@ -88,6 +88,11 @@ const ManageStock = () => {
             .then(result => console.log(result))
     }
 
+    // // Go to all inventory page{
+    // const goToInventories = () => {
+    //     navigate('/manage-inventories');
+    // }
+
     return (
         <div>
             <Header></Header>
@@ -134,9 +139,16 @@ const ManageStock = () => {
                                 </tr>
                             </tbody>
                         </table>
-                        <div className='mt-5 flex justify-center md:justify-start'>
-                            <button onClick={() => handleDelivery(details._id)} className='bg-purple-700 hover:bg-lime-500 text-white py-2 px-6 rounded'>Delivered</button>
-                            <button onClick={() => handleDelete(details._id)} className='hover:bg-lime-500 bg-red-700 text-white py-2 px-6 rounded ml-3'>Delete Item</button>
+                        <div className='mt-5 flex flex-col md:flex-row justify-center md:justify-start'>
+                            <div className='mx-auto md:mx-0'>
+                                <button onClick={() => handleDelivery(details._id)} className='bg-purple-700 hover:bg-lime-500 text-white py-2 px-6 rounded'>Delivered</button>
+                            </div>
+                            <div className='mx-auto mt-3 md:mx-0 md:mt-0'>
+                                <button onClick={() => handleDelete(details._id)} className='hover:bg-lime-500 bg-red-700 text-white py-2 px-6 rounded ml-0 md:ml-3'>Delete Item</button>
+                            </div>
+                            <div className='mx-auto mt-3 md:mx-0 md:mt-0'>
+                                <Link to='/manage-inventories'><button className='bg-lime-500 hover:bg-purple-700 text-white py-2 px-6 rounded ml-0 md:ml-3'>All Items</button></Link>
+                            </div>
                         </div>
                         <div className='mt-5'>
                             <form onSubmit={handleRestock} className='flex justify-center md:justify-start'>

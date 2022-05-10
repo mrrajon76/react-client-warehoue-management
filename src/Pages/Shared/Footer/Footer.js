@@ -1,9 +1,19 @@
 import React from 'react';
 import logo from '../../../Images/logo.png';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import useItems from '../../../hooks/useItems';
 
 const Footer = () => {
+    const [items] = useItems();
+    const navigate = useNavigate();
+
+    const mostSellingItems = items.sort((a, b) => b.sold - a.sold);
+
+    const navigateToManageStock = id => {
+        navigate(`/inventory/${id}`);
+    }
+
     return (
         <div>
             <div className='bg-purple-700 py-4 px-3 md:px-10 lg:px-20'>
@@ -31,17 +41,16 @@ const Footer = () => {
                         <ul className='nav space-y-2 md:text-left text-center '>
                             <li className='hover:text-purple-700'><Link to='/'>Home</Link></li>
                             <li className='hover:text-purple-700'><Link to='/manage-inventories'>Manage Inventories</Link></li>
-                            <li className='hover:text-purple-700'><Link to='/about'>About</Link></li>
+                            <li className='hover:text-purple-700'><Link to='/sold-out-items'>Sold Out Items</Link></li>
                             <li className='hover:text-purple-700'><Link to='/blogs'>Blogs</Link></li>
                         </ul>
                     </div>
                     <div className='md:mx-4 lg:mx-12'>
-                        <h5 className='text-xl md:text-left text-center font-bold text-lime-500 mb-4'>New Products</h5>
+                        <h5 className='text-xl md:text-left text-center font-bold text-lime-500 mb-4'>Popular Products</h5>
                         <ul className='nav space-y-2 md:text-left text-center '>
-                            <li className='hover:text-purple-700'><Link to='/'>Home</Link></li>
-                            <li className='hover:text-purple-700'><Link to='/manage-inventories'>Manage Inventories</Link></li>
-                            <li className='hover:text-purple-700'><Link to='/about'>About</Link></li>
-                            <li className='hover:text-purple-700'><Link to='/blogs'>Blogs</Link></li>
+                            {
+                                mostSellingItems?.slice(0, 4).map(item => <li onClick={() => navigateToManageStock(item._id)} className='hover:text-purple-700 cursor-pointer'>{item.name}</li>)
+                            }
                         </ul>
                     </div>
                     <div className='md:flex justify-end'>

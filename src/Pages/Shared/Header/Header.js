@@ -33,7 +33,7 @@ const Header = () => {
                         {
                             user ? <CustomLink to='/add-new-item'>Add a New Item</CustomLink> : <></>
                         }
-                        <CustomLink to='/about'>About</CustomLink>
+                        <CustomLink to='/sold-out-items'>Sold Out Items</CustomLink>
                         <CustomLink to='/blogs'>Blogs</CustomLink>
                         <span className='mx-3 border-r-2 border-purple-400'></span>
                         {
@@ -58,7 +58,7 @@ const Header = () => {
                         {
                             user ? <Link to='/add-new-item'>Add a New Item</Link> : <></>
                         }
-                        <Link to='/about'>About</Link>
+                        <Link to='/sold-out-items'>Sold Out Items</Link>
                         <Link to='/blogs'>Blogs</Link>
                     </div>
                 </div>
