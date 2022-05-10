@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Getting Started with 'Electronics Inventory Management'
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### First of all, let's check out the live site: [Electronics Inventory Management](https://fullstack-warehouse-management.web.app/)
 
-## Available Scripts
+'Electronics Inventory Management' is a warehouse management app. It is based on Javascript React library. For the server-side, used Node.js and mongoDB as database. It is very easy to use. Here you can add your products by adding all the information and manage stock, delivery, sell information. Also you can easily find out the most selling products and the items which needs to re-stock again.
 
-In the project directory, you can run:
+## Some key features of this app
 
-### `npm start`
+- It has a nice navbar and a professional footer, both are device-friendly
+- To reduce the long height of the homepage, we have only set 6 items here and a button to see all the items on another page
+- On homepage, you can see 6 most popular/most selling items based on your sell data
+- Also you can see the items which stock quantities are less than 40 to give you a reminder for re-stocking the product. There is also a dedicated menu to check sold out products which stock quantity is zero.
+- For every items, you will find two buttons. One is for managing the stock and another one is for deleting the item.
+- For managing the item, you need to login first. After login, you can deliver that specific item. For each delivery, the stock quantity will be decreased and sold quantity will be increased.
+- From here you can add new stock for this item or delete this item.
+- After login, you will be able to see your own added items and you can add a new item.
+- To register as a new user, you can go with email password system or continue with google/github. There is also email verification and reset password features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies we have used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+For the client-side of this app, we have used the following technologies...
 
-### `npm test`
+- React App
+- React Router
+- React Icons
+- Tailwind CSS
+- React Toastify
+- React Environment Variable to secure Firebase auth keys
+- Firebase Authentication
+- Firebase Hosting
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+For the server-side of this app, we have used the following technologies...
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Node.JS
+- MongoDB
+- DotENV to secure database credentials
+- CORS middleware
+- Nodemon

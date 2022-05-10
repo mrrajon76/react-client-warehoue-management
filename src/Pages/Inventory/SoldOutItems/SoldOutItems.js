@@ -1,26 +1,35 @@
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { toast } from 'react-toastify';
+import auth from '../../../firebase.init';
 import useItems from '../../../hooks/useItems';
 import Footer from '../../Shared/Footer/Footer';
 import Header from '../../Shared/Header/Header';
 import InventoryItem from '../InventoryItem/InventoryItem';
 
 const SoldOutItems = () => {
+    const [user] = useAuthState(auth);
     const [items, setItems] = useItems();
     const soldOut = items.filter(item => item.quantity === 0);
 
     // Delete item
     const handleDelete = (id) => {
-        if (window.confirm("Are you really want to delete this item?") === true) {
-            const url = `https://blooming-harbor-14420.herokuapp.com/inventory/${id}`;
-            fetch(url, {
-                method: 'DELETE'
-            })
-                .then(res => res.json())
-                .then(data => {
-                    console.log(data);
-                    const remaining = items.filter(item => item._id !== id);
-                    setItems(remaining);
+        if (user) {
+            if (window.confirm("Are you really want to delete this item?") === true) {
+                const url = `https://blooming-harbor-14420.herokuapp.com/inventory/${id}`;
+                fetch(url, {
+                    method: 'DELETE'
                 })
+                    .then(res => res.json())
+                    .then(data => {
+                        console.log(data);
+                        const remaining = items.filter(item => item._id !== id);
+                        setItems(remaining);
+                    })
+            }
+        }
+        else {
+            toast("Please login first!");
         }
     }
     return (

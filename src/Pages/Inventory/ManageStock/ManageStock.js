@@ -88,11 +88,6 @@ const ManageStock = () => {
             .then(result => console.log(result))
     }
 
-    // // Go to all inventory page{
-    // const goToInventories = () => {
-    //     navigate('/manage-inventories');
-    // }
-
     return (
         <div>
             <Header></Header>
