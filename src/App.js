@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import 'react-toastify/dist/ReactToastify.css';
-import Blogs from './Pages/Blogs/Blogs';
+// import Blogs from './Pages/Blogs/Blogs';
 import Home from './Pages/Home/Home';
 import ManageInventories from './Pages/Inventory/ManageInventories';
 import ManageStock from './Pages/Inventory/ManageStock/ManageStock';
@@ -42,7 +42,7 @@ function App() {
           </RequireAuth>}>
         </Route>
         <Route path='/sold-out-items' element={<SoldOutItems></SoldOutItems>}></Route>
-        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+        {/* <Route path='/blogs' element={<Blogs></Blogs>}></Route> */}
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>

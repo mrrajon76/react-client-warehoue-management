@@ -5,6 +5,7 @@ import Header from '../Shared/Header/Header';
 import InventoryItems from './InventoryItems/InventoryItems/InventoryItems';
 
 const ManageInventories = () => {
+
     return (
         <div>
             <Header></Header>
